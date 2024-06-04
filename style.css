@@ -5,7 +5,7 @@
 }
 * {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
 body {
@@ -40,19 +40,83 @@ h6 {
   isolation: isolate;
 }
 
-.wrapper {
-    width: 90vw;
-
+body {
     display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin: 0 auto;
-    
+    height: 100vh;
+    margin: auto;
+}
+
+.wrapper {
+  width: 90vw;
+  height: auto;
+
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .card {
-  width: 300px;
+  max-width: 300px;
+
+  display: grid;
 
   background: linear-gradient(180deg, #aeaeae, #f1f1f1);
-  border: 1px solid yellow;
+  border-radius: 1rem;
+}
+
+.user_bar {
+  display: flex;
+  flex-flow: row nowrap;
+
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0.5rem;
+}
+
+.user_bar > div {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 0.5rem;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  fill: #ffffff;
+}
+
+.user {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0.5rem;
+}
+
+svg {
+  height: 24px;
+  width: auto;
+}
+
+p {
+  padding: 0 0.5rem 1.5rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.date {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.caption {
+    font-weight: 800;
+    font-size: 0.75rem;
 }
