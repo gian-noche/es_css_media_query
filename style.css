@@ -43,6 +43,7 @@ h6 {
 body {
     display: flex;
     height: 100vh;
+    align-items: center;
     margin: auto;
 }
 
@@ -51,8 +52,9 @@ body {
   height: auto;
 
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 0 auto;
 }
@@ -64,6 +66,7 @@ body {
 
   background: linear-gradient(180deg, #aeaeae, #f1f1f1);
   border-radius: 1rem;
+  box-shadow: 0 1px 5px #afafaf;
 }
 
 .user_bar {
@@ -80,13 +83,14 @@ body {
   display: flex;
   flex-flow: row nowrap;
   gap: 0.5rem;
+
+  align-items: center;
 }
 
 .avatar {
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  border: 1px solid #ffffff;
   fill: #ffffff;
 }
 
